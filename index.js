@@ -26,9 +26,10 @@ app.post('/sendEMail',function(req,res){
             console.log("Email sent")
         }
     })
+})
 
-
-
+app.get('/',function(req,res){
+    res.sendFile("index.html")
 })
 
 app.listen(36989, function(){
