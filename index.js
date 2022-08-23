@@ -29,7 +29,7 @@ app.post('/sendEMail',function(req,res){
 })
 
 app.get('/',function(req,res){
-    res.sendFile("index.html")
+    res.sendFile(__dirname+"/index.html")
 })
 
 app.listen(36989, function(){
